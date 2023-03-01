@@ -7,6 +7,91 @@
 </head>
 <body>
 	<center><h2>Welcome to the Forms page</h2></center>
- 
+	  <!-- Semantoc Tags
+	  	-are new additions to html. Semantic Tags are also container for elements but unlike div theya re definitive and descibrs it content
+	  	wothout relying to semantic id
+	  	however, em, strong are also considered semantics
+	  	semantic container such as nav, main, section, etc. These semantic cntainer are more preferre by developer because it aids Seo, browser as we as other other developer
+	   -->
+  <main>
+  	<!-- main is a semantyic container use to show/display the main content of a page
+  	 -->
+  	 <section>
+  	 <!-- sections are use to show parts of a page or content
+  	  -->
+  	   <h2>HTML Forms </h2>
+  	   <p> HTML Forms are use to gather information/data form our user and send that information to a server </p>
+  	</section>
+  	  <section> 
+  	  	<!--form tags allow to create a form. we can gather and send use input form our form
+  	  	 -->
+  	  	 <!-- action attribute is used to define where the information gathered will be passed after the submission
+  	  	  -->
+  	  	  <!-- label tags create a text elemet that serves as a label to input filled. we can add for a attribute to this element such that when this label is clicked our cursosr wull be moved into oue input
+  	  	   -->
+  	  	   <!-- input tag allow us to create an input element which can be use used to add user input
+  	  	    -->
+  	  	    <!-- type attribute in input elements allows us to identify what kind of infomation us to be gathered. It also affects the behavior of input element.
+  	  	     -->
+  	  	     <!--name attribute allow us to provide a name, identifier for a VALUE of the input element. This is use to identify the value of an input in a form data
+  	  	      -->
+  	  	      <!--id attribute allow us to identify the iunput element. It is ude as reference of the attribute by an appropriate label element
+  	  	       -->
+  	  	       <!-- Required attribute will now allow the form to be submitted until the input element has value or data
+  	  	         -->
+  	  	         <!-- auto complete attribute that provides suggestions inputs and allows for better user experience
+  	  	          -->
+  	  	       <!--  -->
+  	  	<form action="https://google.com">
+  	  		<!--full name -->
+  	  		<label for="fname">Full Name:</label>
+  	  		<br />
+  	  		<input type="text" name="fullname">
+  	  		<br />
+  	  		<label for="bday">Birthdate:</label>
+             <br />
+  	  		<input id="bday"type="date" name="bdate" required>
+  	  		<!--age-->
+  	  		<br />
+  	  			<label for="ageInput">Age:</label>
+             <br />
+  	  		<input id="ageInput"type="number" min="18" max="60" required> 
+  	  		<br />
+  	  		 <label for="genderInput">Gender:</label>
+  	  		 <br />
+  	  		  <select id="genderInput" name="gender">
+  	  		    <option value="male">Male</option>
+  	  		    <option value="female">Female</option>
+  	  		    <option value="other">Other</option>
+  	  		</select>
+  	  		<br />
+  	  		<label>New User?</label>
+  	  		<br />
+  	  		<input id="radioUser1" type="radio" name="newUser" value="yes">
+  	  		<label for="radioUser1">Yes</label>
+  	  			<br />
+			<input id="radioUser2" type="radio" name="newUser" value="no">
+			  	 <label for="radioUser2">No</label>
+				  	  <br />
+
+			 <label>Role:</label>
+			<br/>
+			<input id="roleInput1" type="checkbox" name="role1" value="developer">
+			<label for="roleInput1">Developer</label>
+			<br/>
+			<input id="roleInput2" type="checkbox" name="role2" value="student">
+			<label for="roleInput2">Student</label>
+			<br/>
+			<input id="roleInput3" type="checkbox" name="role3" value="manager">
+			<label for="roleInput3">Manager</label>
+			<br/>
+
+			<button type="submit">Submit</button>
+			<button type="reset">Reset</button>
+
+  	  	</form>
+  	  </section>
+  </main>
+
 </body>
 </html>
